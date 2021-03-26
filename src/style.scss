@@ -1,7 +1,3 @@
-div {
-  color: blue;
-
-  &:hover {
-    color: red;
-  }
-}
+@import "modules/_home.scss";
+@import "modules/_headline.scss";
+@import "modules/_content.scss";
