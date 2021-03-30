@@ -1,3 +1,8 @@
-@import "modules/_home.scss";
-@import "modules/_headline.scss";
-@import "modules/_content.scss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap");
+@import "abstracts/variables";
+@import "components/home";
+@import "components/headline";
+@import "components/content";
+@import "components/confirm";
+@import "components/slider";
+@import "components/base";
