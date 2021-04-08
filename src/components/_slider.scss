@@ -45,19 +45,61 @@
     );
   }
 
-  &__toggle {
-    &--container {
-      background: $toggle-background;
-      width: 80px;
-      height: 2rem;
-      border-radius: 100px;
+  &__options {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+    &--yearly {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        line-height: 20px;
+        background-color: $toggle-background;
+        transition: background-color 0.2s;
+        left: -46px;
+        top: 0px;
+        height: 25px;
+        width: 46px;
+        border-radius: 15px;
+      }
     }
 
-    &--inner {
-      width: 1.75rem;
-      height: 1.75rem;
-      border-radius: 50%;
-      background: $pricing-component-background;
+    &--yearly {
+      position: relative;
+
+      &:before {
+        position: absolute;
+        border-radius: 10px;
+        transition: background-color 0.3s, left 0.3s;
+        content: "";
+        letter-spacing: 20px;
+        background: $pricing-component-background;
+        left: -42px;
+        top: 2px;
+        height: 16px;
+        width: 16px;
+        z-index: 1;
+      }
+    }
+
+    &--checkbox {
+      cursor: grab;
+      opacity: 0;
+      width: 46px;
+      height: 25px;
+      z-index: 2;
+      top: 0px;
+      left: 0px;
+
+      &:hover + .slider__options--yearly:after {
+        background-color: $slider-background;
+      }
+
+      &:checked + .slider__options--yearly:before {
+        left: -21px;
+      }
     }
   }
 }
