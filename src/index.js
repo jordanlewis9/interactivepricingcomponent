@@ -12,7 +12,7 @@ const pageviews = ['10K', '50K', '100K', '500K', '1M'];
 
 track.addEventListener("input", (e) => {
   const arrayIndex = Math.ceil(e.target.value / 20) - 1;
-  track.style.background = `linear-gradient(to right, hsl(174, 86%, 45%) ${e.target.value}%, ${e.target.value}%, hsl(224, 65%, 95%))`;
+  track.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) ${e.target.value}%, ${e.target.value}%, hsl(224, 65%, 95%))`;
   if (checkbox.checked) {
     showMoney.innerHTML = `${yearlyCost[arrayIndex]}`;
     showPageviews.innerHTML = `${pageviews[arrayIndex]}`;

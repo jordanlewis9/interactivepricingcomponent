@@ -10,12 +10,13 @@
     justify-self: center;
 
     &--item {
-      margin: 0.75rem;
+      margin: 0.5rem;
+      padding-left: 0.5rem;
     }
   }
 
   &__button {
-    width: 75%;
+    width: 66%;
     border-radius: 25px;
     align-self: center;
     padding: 0.75rem;
@@ -26,5 +27,23 @@
     color: $cta-text;
     font-family: inherit;
     font-weight: 800;
+    cursor: grab;
+
+    &:hover {
+      color: $pricing-component-background;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .confirm {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+
+    &__list {
+      text-align: center;
+    }
   }
 }

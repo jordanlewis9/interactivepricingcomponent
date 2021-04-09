@@ -1,4 +1,41 @@
 .headline {
   width: 100%;
-  text-align: center;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__main {
+    color: $text-and-cta-background;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .headline {
+    height: 30vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .headline {
+    &__main {
+      font-size: 1.3rem;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    &__subtitle {
+      &--1 {
+        display: block;
+      }
+
+      &--2 {
+        display: block;
+        text-align: center;
+      }
+    }
+  }
 }

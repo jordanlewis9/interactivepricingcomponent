@@ -8,5 +8,15 @@ body {
   background-color: $main-background;
   font-size: $default-font-size;
   font-family: $default-font-family;
+  color: $text;
+  font-weight: 600;
   height: 100vh;
+  background-image: url("../images/bg-pattern.svg");
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
 }

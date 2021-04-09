@@ -13,7 +13,7 @@
       <h1 class="headline__main">
         Simple, traffic-based pricing
       </h1>
-      <p class="headline__subtitle">Sign-up for our 30-day trial. No credit card required.</p>
+      <p class="headline__subtitle"><span class="headline__subtitle--1">Sign-up for our 30-day trial. </span><span class="headline__subtitle--2">No credit card required.</span></p>
     </div>
     <div class="content__container">
       <div class="slider">
@@ -25,11 +25,13 @@
             <span class="slider__stats--money-bold">
               $16.00
             </span>
-            /<span class="slider__stats--time">month</span>
+            <span class="slider__stats--fulltime">
+              / <span class="slider__stats--time">month</span>
+            </span>
           </p>
-        </div>
-        <div class="slider__container">
-          <input type="range" class="slider__slider stage-3" min="1" max="100" step="1">
+          <div class="slider__container">
+            <input type="range" class="slider__slider stage-3" min="1" max="100" step="1">
+          </div>
         </div>
         <div class="slider__options">
           <p class="slider__options--monthly">
@@ -37,19 +39,16 @@
           </p>
           <input type="checkbox" class="slider__options--checkbox">
           <p class="slider__options--yearly">
-            Yearly Billing
-          </p>
-          <p class="slider__options--discount">
-            25% discount
+            Yearly Billing <span class="slider__options--discount">25%</span>
           </p>
         </div>
       </div>
       <hr>
       <div class="confirm">
         <ul class="confirm__list">
-          <li class="confirm__list--item"> Unlimited websites</li>
-          <li class="confirm__list--item"> 100% data ownership</li>
-          <li class="confirm__list--item"> Email reports</li>
+          <li class="confirm__list--item">Unlimited websites</li>
+          <li class="confirm__list--item">100% data ownership</li>
+          <li class="confirm__list--item">Email reports</li>
         </ul>
         <button class="confirm__button">Start my trial</button>
       </div>
