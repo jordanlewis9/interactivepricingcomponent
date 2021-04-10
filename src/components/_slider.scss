@@ -193,8 +193,39 @@ input[type="range"] {
     &__container {
       grid-area: slider;
     }
+
     &__options {
+      grid-template-columns: auto 37px auto;
+
+      &--monthly {
+        justify-self: self-end;
+        margin-right: 0.5rem;
+      }
+
+      &--yearly {
+        margin-left: 0.5rem;
+
+        &:after {
+          width: 37px;
+          left: -44.5px;
+        }
+
+        &:before {
+          left: -40.5px;
+        }
+      }
+
+      &--checkbox {
+        margin-left: 0;
+        width: 37px;
+
+        &:checked + .slider__options--yearly:before {
+          left: -27px;
+        }
+      }
+
       &--discount {
+        margin-left: 0;
         &:after {
           content: "";
         }

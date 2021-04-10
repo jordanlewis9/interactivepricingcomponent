@@ -43,7 +43,11 @@
     padding: 2rem;
 
     &__list {
-      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
     }
   }
 }
