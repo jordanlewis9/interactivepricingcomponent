@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /\.(svg|jpg)$/,
-        type: "asset/inline"
+        type: "asset/resource"
       }
     ]
   }
